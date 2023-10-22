@@ -1,0 +1,245 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Apply a vibrant background gradient to the body */
+  body {
+    background: linear-gradient(to bottom,#6555E7);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Style the header with a gradient background */
+  header {
+    background: linear-gradient(to top, #486180, #506fa0);
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  header a:hover {
+    color: #6a258c; /* Change the color to gold on hover */
+  }
+  .header-left {
+    margin-left: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  .header-right {
+    margin-right: 20px;
+    font-size: 16px;
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+  }
+  
+  .header-right a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+  }
+  
+  nav li {
+    margin-left: 10px;
+  }
+  
+  nav a:hover {
+    border-bottom: 2px solid #333; /* Add a gold underline on hover */
+  }
+  
+  /* Style navigation links in an unordered list */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+  }
+  
+  .nav-links li {
+    margin-left: 20px; /* Increase spacing between navigation items */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+    position: relative; /* Add a relative position for pseudo-elements */
+  }
+  
+  /* Add an underline effect on hover */
+  .nav-links a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Adjust the underline height as desired */
+    bottom: 0;
+    left: 0;
+    background-color: #FFD700; /* Use a gold color for the underline */
+    transform: scaleX(0); /* Initially, set the underline width to zero */
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .nav-links a:hover::before {
+    transform: scaleX(1); /* Expand the underline on hover */
+  }
+  
+  /* Style the sections */
+  .section1, .section2, .section3, .section4 {
+    position: relative;
+    padding: 20px 100px;
+  }
+  
+  /* Ensure images are responsive and add a subtle shadow effect */
+  .section1 .img,
+  .section2 .img,
+  .section3 .img,
+  .section4 .img {
+    background-blend-mode: overlay;
+    padding: 5px;
+    max-width: 90%;
+    height: auto;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: block; /* Ensure images behave as block elements */
+    margin: 0 auto; /* Center-align images horizontally */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+    border-radius: 20px; /* Add rounded corners */
+  }
+  
+  /* Scale images slightly on hover for a zoom-in effect and adjust shadow */
+  .section1 .img:hover,
+  .section2 .img:hover,
+  .section3 .img:hover,
+  .section4 .img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Slightly increase shadow on hover */
+  }
+  
+  .overlay,
+  .overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align text to the bottom */
+    transition: background-color 0.3s ease;
+    padding: 20px;
+  }
+  
+  .overlay{
+    justify-content: center;
+    text-align: right;
+  }
+  
+  .overlay2 {
+    justify-content: center; /* Align text to the top */
+    text-align: left; /* Adjust text alignment */
+  }
+  
+  .para {
+    color: black;
+    font-size: 40px;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  
+  .text {
+    padding-right: 10%;
+    padding-left: 10%;
+    font-size: 15px;
+  }
+  .button-wrapper{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left:10%;
+    padding-right: 10%;
+  }
+  
+  .btn1,
+  .btn2 {
+    padding: 7.5px 15px;
+    background-color: #6555E7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  
+  .btn1:hover,
+  .btn2:hover {
+    background-color: #333; /* Darken the background color on hover */
+    transform: scale(1.05); /* Slightly scale the button on hover */
+  }
+  
+  /* Style the footer */
+  footer {
+    background: linear-gradient(to top, #486180, #506fa0);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* Adjust the footer content layout */
+  .footer-content {
+    display: flex;
+    justify-content: center; /* Center-align content horizontally */
+    align-items: center;
+    flex-direction: column; /* Stack footer links vertically */
+  }
+  
+  /* Style footer links */
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+  }
+  
+  .footer-links li {
+    margin: 0 20px; /* Increase spacing between footer links */
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+    position: relative; /* Add a relative position for pseudo-elements */
+  }
+  
+  .footer-links a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Adjust the underline height as desired */
+    bottom: 0;
+    left: 0;
+    background-color: #FFD700; /* Use a gold color for the underline */
+    transform: scaleX(0); /* Initially, set the underline width to zero */
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Highlight footer links on hover */
+  .footer-links a:hover {
+    color:  #FFD700;
+  }

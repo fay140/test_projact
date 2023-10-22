@@ -1,0 +1,57 @@
+header h1 {
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  /* Style the news section */
+  .news {
+    padding: 20px;
+  }
+  
+  .news h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    transition: font-size 0.3s ease;
+  }
+  
+  .news h1:hover {
+    font-size: 32px; /* Increase font size on hover */
+  }
+  
+  /* Style news articles */
+  .news-article {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .news-article:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  }
+  
+  .news-article h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .news-article p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .news-article a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .news-article a:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Change link color on hover */
+  }
+  
